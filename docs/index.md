@@ -1,3 +1,3 @@
 # Installation
 
-Clone the repo and run make re.
+Clone the repo and run `make re`.
