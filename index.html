@@ -10,6 +10,8 @@
       
       
       
+        <link rel="next" href="syntax/">
+      
       
       <link rel="icon" href="assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.3.2">
@@ -259,7 +261,27 @@
   
     
   
-  Installation
+  Acceuil
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="syntax/" class="md-tabs__link">
+          
+  
+    
+  
+  Syntaxe
 
         </a>
       </li>
@@ -343,7 +365,7 @@
               
   
   <span class="md-ellipsis">
-    Installation
+    Acceuil
   </span>
   
 
@@ -354,10 +376,75 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
-            Installation
+            Acceuil
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Syntaxe
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Syntaxe
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="syntax/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Syntaxe de notre langage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
           </ul>
@@ -408,6 +495,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#syntaxe" class="md-nav__link">
+    Syntaxe
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#utilisation" class="md-nav__link">
     Utilisation
   </a>
@@ -442,11 +536,20 @@
 <h1 id="glados">GLaDOS</h1>
 <h2 id="description">Description</h2>
 <p>GLaDOS est un projet de création de langage de programmation.
-Actuelement, il s'agit d'un interpréteur <a href="https://github.com/cisco/ChezScheme/releases/tag/v9.5.8">Chez Scheme Lisp</a>.</p>
+Ce projet est divisé en 2 parties :</p>
+<ul>
+<li>Un compilateur</li>
+<li>Un Parser qui transforme un fichier de code en AST</li>
+<li>Un compilateur qui transforme l'AST en bytecode puis en fichier binaire</li>
+<li>Une machine virtuelle</li>
+<li>Un programme qui lit un fichier binaire et l'execute</li>
+</ul>
 <h2 id="installation">Installation</h2>
 <p>Clonez le repo et lancez <code>make re</code>.</p>
+<h2 id="syntaxe">Syntaxe</h2>
+<p>La syntaxe du langage est décrite dans ici : <a href="syntax/">Syntaxe</a></p>
 <h2 id="utilisation">Utilisation</h2>
-<p>Lancez <code>./glados &lt;fichier&gt;</code> pour exécuter un fichier (Chez Scheme lisp) tout comme vous executeriez un code python avec <code>python &lt;fichier&gt;</code>.</p>
+<p>Lancez <code>./glados &lt;fichier&gt;</code> pour compiler un fichier <code>.bin</code> puis <code>./eval &lt;fichier.bin&gt;</code> pour l'executer.</p>
 <h2 id="auteurs">Auteurs</h2>
 <ul>
 <li><a href="https://github.com/Kenan-Blasius"><strong>Kenan Blasius</strong></a></li>
