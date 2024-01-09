@@ -520,6 +520,62 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#statements" class="md-nav__link">
+    Statements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#retours" class="md-nav__link">
+    Retours
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appels-de-fonctions" class="md-nav__link">
+    Appels de fonctions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditions" class="md-nav__link">
+    Conditions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boucles" class="md-nav__link">
+    Boucles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonctions" class="md-nav__link">
+    Fonctions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commentaires" class="md-nav__link">
+    Commentaires
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fichiers" class="md-nav__link">
+    Fichiers
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -604,6 +660,62 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#statements" class="md-nav__link">
+    Statements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#retours" class="md-nav__link">
+    Retours
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appels-de-fonctions" class="md-nav__link">
+    Appels de fonctions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditions" class="md-nav__link">
+    Conditions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boucles" class="md-nav__link">
+    Boucles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonctions" class="md-nav__link">
+    Fonctions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commentaires" class="md-nav__link">
+    Commentaires
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fichiers" class="md-nav__link">
+    Fichiers
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -669,6 +781,48 @@
 <span class="p">&lt;</span><span class="nc">string</span><span class="p">&gt;</span> <span class="o">::=</span> &#39;&quot;&#39; <span class="p">&lt;</span><span class="nc">char</span><span class="p">&gt;</span>* &#39;&quot;&#39;
 
 <span class="p">&lt;</span><span class="nc">char</span><span class="p">&gt;</span> <span class="o">::=</span> <span class="p">&lt;</span><span class="nc">letter</span><span class="p">&gt;</span> | <span class="p">&lt;</span><span class="nc">digit</span><span class="p">&gt;</span> | <span class="p">&lt;</span><span class="nc">special</span><span class="p">&gt;</span> | <span class="p">&lt;</span><span class="nc">space</span><span class="p">&gt;</span> | <span class="p">&lt;</span><span class="nc">tabulation</span><span class="p">&gt;</span> | <span class="p">&lt;</span><span class="nc">line-break</span><span class="p">&gt;</span>
+</code></pre></div>
+<h2 id="statements">Statements</h2>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nc">statement</span><span class="p">&gt;</span> <span class="o">::=</span> ( <span class="p">&lt;</span><span class="nc">variable</span><span class="p">&gt;</span> | <span class="p">&lt;</span><span class="nc">expression</span><span class="p">&gt;</span> | <span class="p">&lt;</span><span class="nc">if</span><span class="p">&gt;</span> | <span class="p">&lt;</span><span class="nc">while</span><span class="p">&gt;</span> | <span class="p">&lt;</span><span class="nc">for</span><span class="p">&gt;</span> | <span class="p">&lt;</span><span class="nc">return</span><span class="p">&gt;</span> | <span class="p">&lt;</span><span class="nc">function-call</span><span class="p">&gt;</span> ) &quot;;&quot;
+</code></pre></div>
+<h2 id="retours">Retours</h2>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nc">return</span><span class="p">&gt;</span> <span class="o">::=</span> &quot;return&quot; <span class="p">&lt;</span><span class="nc">indent</span><span class="p">&gt;</span> ( <span class="p">&lt;</span><span class="nc">expression</span><span class="p">&gt;</span> | <span class="p">&lt;</span><span class="nc">variable</span><span class="p">&gt;</span> | <span class="p">&lt;</span><span class="nc">function-call</span><span class="p">&gt;</span> ) &quot;;&quot;
+</code></pre></div>
+<h2 id="appels-de-fonctions">Appels de fonctions</h2>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nc">function-call</span><span class="p">&gt;</span> <span class="o">::=</span> <span class="p">&lt;</span><span class="nc">function-name</span><span class="p">&gt;</span> &quot;(&quot; <span class="p">&lt;</span><span class="nc">function-call-args</span><span class="p">&gt;</span> &quot;)&quot;
+</code></pre></div>
+<h2 id="conditions">Conditions</h2>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nc">if</span><span class="p">&gt;</span> <span class="o">::=</span> &quot;if&quot; <span class="p">&lt;</span><span class="nc">indent</span><span class="p">&gt;</span> &quot;(&quot; <span class="p">&lt;</span><span class="nc">expression</span><span class="p">&gt;</span> &quot;)&quot; <span class="p">&lt;</span><span class="nc">indent</span><span class="p">&gt;</span> &quot;{&quot; <span class="p">&lt;</span><span class="nc">statement</span><span class="p">&gt;</span> &quot;}&quot; [ <span class="p">&lt;</span><span class="nc">else-if</span><span class="p">&gt;</span> ] [ <span class="p">&lt;</span><span class="nc">else</span><span class="p">&gt;</span> ]
+
+<span class="p">&lt;</span><span class="nc">else-if</span><span class="p">&gt;</span> <span class="o">::=</span> &quot;else&quot; <span class="p">&lt;</span><span class="nc">indent</span><span class="p">&gt;</span> &quot;if&quot; <span class="p">&lt;</span><span class="nc">indent</span><span class="p">&gt;</span> &quot;(&quot; <span class="p">&lt;</span><span class="nc">expression</span><span class="p">&gt;</span> &quot;)&quot; <span class="p">&lt;</span><span class="nc">indent</span><span class="p">&gt;</span> &quot;{&quot; <span class="p">&lt;</span><span class="nc">statement</span><span class="p">&gt;</span> &quot;}&quot; [ <span class="p">&lt;</span><span class="nc">else-if</span><span class="p">&gt;</span> ] [ <span class="p">&lt;</span><span class="nc">else</span><span class="p">&gt;</span> ]
+
+<span class="p">&lt;</span><span class="nc">else</span><span class="p">&gt;</span> <span class="o">::=</span> &quot;else&quot; <span class="p">&lt;</span><span class="nc">indent</span><span class="p">&gt;</span> &quot;{&quot; <span class="p">&lt;</span><span class="nc">statement</span><span class="p">&gt;</span> &quot;}&quot;
+</code></pre></div>
+<h2 id="boucles">Boucles</h2>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nc">while</span><span class="p">&gt;</span> <span class="o">::=</span> &quot;while&quot; <span class="p">&lt;</span><span class="nc">indent</span><span class="p">&gt;</span> &quot;(&quot; <span class="p">&lt;</span><span class="nc">expression</span><span class="p">&gt;</span> &quot;)&quot; <span class="p">&lt;</span><span class="nc">indent</span><span class="p">&gt;</span> &quot;{&quot; <span class="p">&lt;</span><span class="nc">statement</span><span class="p">&gt;</span> &quot;}&quot;
+
+<span class="p">&lt;</span><span class="nc">for</span><span class="p">&gt;</span> <span class="o">::=</span> &quot;for&quot; <span class="p">&lt;</span><span class="nc">indent</span><span class="p">&gt;</span> &quot;(&quot; <span class="p">&lt;</span><span class="nc">variable</span><span class="p">&gt;</span> &quot;;&quot; <span class="p">&lt;</span><span class="nc">expression</span><span class="p">&gt;</span> &quot;;&quot; <span class="p">&lt;</span><span class="nc">expression</span><span class="p">&gt;</span> &quot;)&quot; <span class="p">&lt;</span><span class="nc">indent</span><span class="p">&gt;</span> &quot;{&quot; <span class="p">&lt;</span><span class="nc">statement</span><span class="p">&gt;</span> &quot;}&quot;
+</code></pre></div>
+<h2 id="fonctions">Fonctions</h2>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nc">function</span><span class="p">&gt;</span> <span class="o">::=</span> <span class="p">&lt;</span><span class="nc">type</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nc">indent</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nc">function-name</span><span class="p">&gt;</span> &quot;(&quot; <span class="p">&lt;</span><span class="nc">function-args</span><span class="p">&gt;</span> &quot;)&quot; &quot;:&quot; <span class="p">&lt;</span><span class="nc">return-type</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nc">function-body</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nc">function-name</span><span class="p">&gt;</span> <span class="o">::=</span> <span class="p">&lt;</span><span class="nc">letter</span><span class="p">&gt;</span> | <span class="p">&lt;</span><span class="nc">function-name</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nc">letter</span><span class="p">&gt;</span> | <span class="p">&lt;</span><span class="nc">function-name</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nc">digit</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nc">function-args</span><span class="p">&gt;</span> <span class="o">::=</span> <span class="p">&lt;</span><span class="nc">function-arg</span><span class="p">&gt;</span> | <span class="p">&lt;</span><span class="nc">function-arg</span><span class="p">&gt;</span> &quot;,&quot; <span class="p">&lt;</span><span class="nc">function-args</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nc">function-arg</span><span class="p">&gt;</span> <span class="o">::=</span> <span class="p">&lt;</span><span class="nc">type</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nc">indent</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nc">variable-name</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nc">return-type</span><span class="p">&gt;</span> <span class="o">::=</span> <span class="p">&lt;</span><span class="nc">type</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nc">function-body</span><span class="p">&gt;</span> <span class="o">::=</span> <span class="p">&lt;</span><span class="nc">indent</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nc">statement</span><span class="p">&gt;</span> | <span class="p">&lt;</span><span class="nc">indent</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nc">statement</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nc">function-body</span><span class="p">&gt;</span>
+</code></pre></div>
+<h2 id="commentaires">Commentaires</h2>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nc">comment</span><span class="p">&gt;</span> <span class="o">::=</span> &quot;//&quot; <span class="p">&lt;</span><span class="nc">utf16-char</span><span class="p">&gt;</span>* &quot;\n&quot;
+
+<span class="p">&lt;</span><span class="nc">multiline-comment</span><span class="p">&gt;</span> <span class="o">::=</span> &quot;/*&quot; <span class="p">&lt;</span><span class="nc">utf16-char</span><span class="p">&gt;</span>* &quot;*/&quot;
+</code></pre></div>
+<h2 id="fichiers">Fichiers</h2>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nc">file</span><span class="p">&gt;</span> <span class="o">::=</span> <span class="p">&lt;</span><span class="nc">function</span><span class="p">&gt;</span> | <span class="p">&lt;</span><span class="nc">statement</span><span class="p">&gt;</span> | <span class="p">&lt;</span><span class="nc">comment</span><span class="p">&gt;</span> | <span class="p">&lt;</span><span class="nc">multiline-comment</span><span class="p">&gt;</span> | <span class="p">&lt;</span><span class="nc">file</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nc">file</span><span class="p">&gt;</span>
 </code></pre></div>
 
 
