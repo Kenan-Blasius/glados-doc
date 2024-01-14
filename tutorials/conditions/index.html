@@ -719,6 +719,40 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#operateurs-logique" class="md-nav__link">
+    Opérateurs logique
+  </a>
+  
+    <nav class="md-nav" aria-label="Opérateurs logique">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operateur-et" class="md-nav__link">
+    Opérateur ET
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operateur-ou" class="md-nav__link">
+    Opérateur OU
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operateur-non" class="md-nav__link">
+    Opérateur NON
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercices" class="md-nav__link">
     Exercices
   </a>
@@ -992,6 +1026,40 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#operateurs-logique" class="md-nav__link">
+    Opérateurs logique
+  </a>
+  
+    <nav class="md-nav" aria-label="Opérateurs logique">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operateur-et" class="md-nav__link">
+    Opérateur ET
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operateur-ou" class="md-nav__link">
+    Opérateur OU
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operateur-non" class="md-nav__link">
+    Opérateur NON
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercices" class="md-nav__link">
     Exercices
   </a>
@@ -1099,6 +1167,41 @@
 <span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;a est égal à 6&quot;</span><span class="p">);</span>
 <span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;a n&#39;est ni égal à 5 ni égal à 6&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="operateurs-logique">Opérateurs logique</h2>
+<p>Les opérateurs logiques permettent de combiner plusieurs conditions.</p>
+<h3 id="operateur-et">Opérateur ET</h3>
+<p>L'opérateur ET permet de combiner deux conditions.</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">condition1</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">condition2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Instructions</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Par exemple :</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">6</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;a est égal à 5 ET b est égal à 6&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="operateur-ou">Opérateur OU</h3>
+<p>L'opérateur OU permet de combiner deux conditions.</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">condition1</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">condition2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Instructions</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Par exemple :</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">6</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;a est égal à 5 OU b est égal à 6 OU les deux&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="operateur-non">Opérateur NON</h3>
+<p>L'opérateur NON permet d'inverser une condition.</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">condition</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Instructions</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Par exemple :</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;a n&#39;est pas égal à 5&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="exercices">Exercices</h2>
