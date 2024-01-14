@@ -9,23 +9,25 @@
       
       
       
+        <link rel="prev" href="../">
       
-        <link rel="next" href="syntax/">
+      
+        <link rel="next" href="../operators/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.3.2">
     
     
       
-        <title>GLaDOS - Glados-Documentation</title>
+        <title>Tutoriel sur les variables - Glados-Documentation</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.30068a00.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.30068a00.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.85d0ee34.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.85d0ee34.min.css">
       
       
   
@@ -85,7 +87,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -114,7 +116,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#glados" class="md-skip">
+        <a href="#tutoriel-sur-les-variables" class="md-skip">
           Skip to content
         </a>
       
@@ -128,7 +130,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Glados-Documentation" class="md-header__button md-logo" aria-label="Glados-Documentation" data-md-component="logo">
+    <a href="../.." title="Glados-Documentation" class="md-header__button md-logo" aria-label="Glados-Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -148,7 +150,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GLaDOS
+              Tutoriel sur les variables
             
           </span>
         </div>
@@ -250,13 +252,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="." class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
           
   
     
@@ -276,7 +276,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="syntax/" class="md-tabs__link">
+        <a href="../../syntax/" class="md-tabs__link">
           
   
     
@@ -292,11 +292,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="tutorials/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
     
@@ -316,7 +318,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="features/" class="md-tabs__link">
+        <a href="../../features/" class="md-tabs__link">
           
   
     
@@ -351,7 +353,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Glados-Documentation" class="md-nav__button md-logo" aria-label="Glados-Documentation" data-md-component="logo">
+    <a href="../.." title="Glados-Documentation" class="md-nav__button md-logo" aria-label="Glados-Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -378,8 +380,6 @@
       
   
   
-    
-  
   
     
     
@@ -390,18 +390,18 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="." class="md-nav__link md-nav__link--active">
+            <a href="../.." class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -413,7 +413,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Acceuil
@@ -475,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="syntax/" class="md-nav__link">
+      <a href="../../syntax/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -495,7 +495,7 @@
   
   
     <li class="md-nav__item">
-      <a href="raw-bnf/" class="md-nav__link">
+      <a href="../../raw-bnf/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -520,6 +520,8 @@
       
   
   
+    
+  
   
     
     
@@ -538,13 +540,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
@@ -557,7 +559,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Tutoriels
@@ -570,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tutorials/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -588,9 +590,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="tutorials/variables/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Tutoriel sur les variables
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -599,6 +621,109 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    Définition
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#informations" class="md-nav__link">
+    Informations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#declaration" class="md-nav__link">
+    Déclaration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#affectation" class="md-nav__link">
+    Affectation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#declaration-et-affectation" class="md-nav__link">
+    Déclaration et affectation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilisation" class="md-nav__link">
+    Utilisation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#portee" class="md-nav__link">
+    Portée
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercices" class="md-nav__link">
+    Exercices
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercice-1" class="md-nav__link">
+    Exercice 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercice-2" class="md-nav__link">
+    Exercice 2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercice-3" class="md-nav__link">
+    Exercice 3
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -610,7 +735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tutorials/operators/" class="md-nav__link">
+      <a href="../operators/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -630,7 +755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tutorials/conditions/" class="md-nav__link">
+      <a href="../conditions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -650,7 +775,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tutorials/loops/" class="md-nav__link">
+      <a href="../loops/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -670,7 +795,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tutorials/functions/" class="md-nav__link">
+      <a href="../functions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -739,7 +864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="features/" class="md-nav__link">
+      <a href="../../features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -759,7 +884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="features/variables/" class="md-nav__link">
+      <a href="../../features/variables/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -779,7 +904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="features/operators/" class="md-nav__link">
+      <a href="../../features/operators/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -827,42 +952,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
-    Description
+  <a href="#definition" class="md-nav__link">
+    Définition
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
+  <a href="#informations" class="md-nav__link">
+    Informations
   </a>
-  
-    <nav class="md-nav" aria-label="Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#a-partir-dun-binaire" class="md-nav__link">
-    A partir d'un binaire
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#a-partir-du-code-source" class="md-nav__link">
-    A partir du code source
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#syntaxe" class="md-nav__link">
-    Syntaxe
+  <a href="#declaration" class="md-nav__link">
+    Déclaration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#affectation" class="md-nav__link">
+    Affectation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#declaration-et-affectation" class="md-nav__link">
+    Déclaration et affectation
   </a>
   
 </li>
@@ -875,9 +994,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#auteurs" class="md-nav__link">
-    Auteurs
+  <a href="#portee" class="md-nav__link">
+    Portée
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercices" class="md-nav__link">
+    Exercices
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercice-1" class="md-nav__link">
+    Exercice 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercice-2" class="md-nav__link">
+    Exercice 2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercice-3" class="md-nav__link">
+    Exercice 3
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -899,45 +1052,91 @@
   
 
 
-<h1 id="glados">GLaDOS</h1>
-<h2 id="description">Description</h2>
-<p>GLaDOS est un projet de création de langage de programmation.</p>
-<p>Ce projet est divisé en 2 parties :</p>
-<ol>
-<li>Un compilateur<ol>
-<li>Un Parser qui transforme un fichier de code en AST<ol>
-<li>Un lexer qui transforme un fichier de code en tokens</li>
-<li>Un parser qui transforme les tokens en Sexpr</li>
-<li>Un parser qui transforme les Sexpr en AST</li>
-</ol>
-</li>
-<li>Un compilateur qui transforme l'AST en bytecode puis en fichier binaire<ol>
-<li>Un compilateur qui transforme l'AST en bytecode</li>
-<li>Un compilateur qui transforme le bytecode en fichier binaire</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>Une machine virtuelle<ol>
-<li>Un programme qui lit un fichier binaire et l'execute</li>
-</ol>
-</li>
-</ol>
-<h2 id="installation">Installation</h2>
-<h3 id="a-partir-dun-binaire">A partir d'un binaire</h3>
-<p>Téléchargez les binaires dans la section realease du repo.</p>
-<h3 id="a-partir-du-code-source">A partir du code source</h3>
-<p>Clonez le repo et lancez <code>make</code>.</p>
-<h2 id="syntaxe">Syntaxe</h2>
-<p>La syntaxe du langage est décrite ici : <a href="syntax/">Syntaxe</a></p>
+<h1 id="tutoriel-sur-les-variables">Tutoriel sur les variables</h1>
+<h2 id="definition">Définition</h2>
+<p>Une variable est un espace mémoire qui permet de stocker une valeur.</p>
+<p>Cette valeur peut être de différents types.</p>
+<h2 id="informations">Informations</h2>
+<p>Pour plus d'informations sur les types et les noms des varibles, voir la page <a href="../../features/variables/">Fonctionnalités - Les variables</a>.</p>
+<h2 id="declaration">Déclaration</h2>
+<p>En C--, une variable doit être déclarée avant d'être utilisée. La déclaration d'une variable se fait de la manière suivante :</p>
+<div class="highlight"><pre><span></span><code><span class="n">type</span><span class="w"> </span><span class="n">nom_variable</span><span class="p">;</span>
+</code></pre></div>
+<p>Par exemple :</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+<span class="kt">float</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="kt">char</span><span class="w"> </span><span class="n">c</span><span class="p">;</span>
+<span class="n">string</span><span class="w"> </span><span class="n">d</span><span class="p">;</span>
+</code></pre></div>
+<h2 id="affectation">Affectation</h2>
+<p>L'affectation d'une valeur à une variable se fait de la manière suivante :</p>
+<div class="highlight"><pre><span></span><code><span class="n">nom_variable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">valeur</span><span class="p">;</span>
+</code></pre></div>
+<p>Par exemple :</p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.14</span><span class="p">;</span>
+<span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;a&#39;</span><span class="p">;</span>
+<span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello World!&quot;</span><span class="p">;</span>
+</code></pre></div>
+<h2 id="declaration-et-affectation">Déclaration et affectation</h2>
+<p>Il est possible de déclarer et d'affecter une valeur à une variable en même temps :</p>
+<div class="highlight"><pre><span></span><code><span class="n">type</span><span class="w"> </span><span class="n">nom_variable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">valeur</span><span class="p">;</span>
+</code></pre></div>
+<p>Par exemple :</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="kt">float</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.14</span><span class="p">;</span>
+<span class="kt">char</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;a&#39;</span><span class="p">;</span>
+<span class="n">string</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hello World!&quot;</span><span class="p">;</span>
+</code></pre></div>
 <h2 id="utilisation">Utilisation</h2>
-<p>Lancez <code>./glados &lt;fichier&gt;</code> pour compiler un fichier <code>.bin</code> puis <code>./eval &lt;fichier.bin&gt;</code> pour l'executer.</p>
-<h2 id="auteurs">Auteurs</h2>
-<ul>
-<li><a href="https://github.com/Kenan-Blasius"><strong>Kenan Blasius</strong></a></li>
-<li><a href="https://github.com/NielsOuvrard"><strong>Niels Ouvrard</strong></a></li>
-<li><a href="https://github.com/ClementMNT"><strong>Clément Montoya</strong></a></li>
-</ul>
+<p>Une variable peut être utilisée dans une expression :</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"> </span><span class="c1">// c vaut 8</span>
+</code></pre></div>
+<h2 id="portee">Portée</h2>
+<p>Une variable a une portée, c'est-à-dire une zone du code dans laquelle elle est accessible.</p>
+<p>En C--, une variable déclarée dans une fonction n'est accessible que dans cette fonction.</p>
+<p>Par exemple :</p>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">fonction1</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"> </span><span class="c1">// c vaut 8</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">fonction2</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"> </span><span class="c1">// erreur : b n&#39;est pas accessible</span>
+<span class="p">}</span>
+</code></pre></div>
+<!-- ## Constantes
+
+Une constante est une variable dont la valeur ne peut pas être modifiée.
+
+En C--, une constante est déclarée de la manière suivante :
+
+<div class="highlight"><pre><span></span><code><span class="k">const</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="n">nom_variable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">valeur</span><span class="p">;</span>
+</code></pre></div>
+
+Par exemple :
+
+```c
+const int a = 5;
+const float b = 3.14;
+const char c = 'a';
+const string d = "Hello World!";
+``` -->
+
+<h2 id="exercices">Exercices</h2>
+<h3 id="exercice-1">Exercice 1</h3>
+<p>Écrire un programme qui déclare une variable de chaque type et qui leur affecte une valeur.</p>
+<h3 id="exercice-2">Exercice 2</h3>
+<p>Maintenant, le programme doit afficher la valeur de chaque variable.</p>
+<div class="admonition note">
+<p class="admonition-title">Indice</p>
+<p>Pour afficher une valeur, il faut utiliser la fonction <code>print</code></p>
+</div>
+<h3 id="exercice-3">Exercice 3</h3>
+<p>Écrire un programme qui déclare deux variables de type entier et qui leur affecte une valeur.</p>
+<p>Le programme doit ensuite afficher la somme de ces deux variables.</p>
 
 
 
@@ -983,10 +1182,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy", "content.code.annotate", "content.tabs.link", "navigation.tabs", "navigation.tracking", "navigation.indexes", "navigation.sections", "navigation.top"], "search": "assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.annotate", "content.tabs.link", "navigation.tabs", "navigation.tracking", "navigation.indexes", "navigation.sections", "navigation.top"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
       
     
   </body>
