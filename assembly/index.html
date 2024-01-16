@@ -661,6 +661,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#les-syscalls" class="md-nav__link">
+    Les syscalls
+  </a>
+  
+    <nav class="md-nav" aria-label="Les syscalls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple-of-syscall-usage" class="md-nav__link">
+    Exemple of syscall usage
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1043,6 +1063,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#les-syscalls" class="md-nav__link">
+    Les syscalls
+  </a>
+  
+    <nav class="md-nav" aria-label="Les syscalls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemple-of-syscall-usage" class="md-nav__link">
+    Exemple of syscall usage
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1306,18 +1346,20 @@
 <span class="mi">14</span><span class="p">,</span>          <span class="c1"># Return</span>
 <span class="mi">14</span>           <span class="c1"># Return</span>
 </code></pre></div>
-<p>-- LOAD_CONST 0x01
--- LOAD_VAR 0x02
--- STORE_VAR 0x03</p>
 <p>Comme on peut le voir, les instructions <code>LoadConst</code>, <code>LoadVar</code> et <code>StoreVar</code> fonctionnent comme ceci:</p>
 <div class="highlight"><pre><span></span><code><span class="n">First</span> <span class="n">byte</span><span class="p">:</span>
-<span class="mh">0x01</span> <span class="c1"># LOAD_CONST</span>
-<span class="mh">0x02</span> <span class="c1"># LOAD_VAR</span>
-<span class="mh">0x03</span> <span class="c1"># STORE_VAR</span>
+<span class="mh">0x01</span> <span class="c1"># LoadConst</span>
+<span class="mh">0x02</span> <span class="c1"># LoadVar</span>
+<span class="mh">0x03</span> <span class="c1"># StoreVar</span>
 
 <span class="mi">4</span> <span class="n">octets</span> <span class="n">suivants</span> <span class="n">sont</span> <span class="n">l</span> <span class="nb">id</span> <span class="n">de</span> <span class="n">la</span> <span class="n">variable</span> <span class="n">ou</span><span class="p">,</span> <span class="n">la</span> <span class="n">valeur</span> <span class="n">de</span> <span class="n">la</span> <span class="n">constante</span>
+<span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span><span class="p">,</span> <span class="mh">0x00</span> <span class="c1"># 0</span>
 
 <span class="mi">1</span> <span class="n">octet</span> <span class="n">suivant</span> <span class="n">est</span> <span class="n">le</span> <span class="nb">type</span> <span class="n">de</span> <span class="n">la</span> <span class="n">variable</span>
+<span class="mh">0x01</span> <span class="c1"># IntType</span>
+<span class="mh">0x02</span> <span class="c1"># FloatType</span>
+<span class="mh">0x03</span> <span class="c1"># StringType</span>
+<span class="mh">0x04</span> <span class="c1"># BoolType</span>
 </code></pre></div>
 <!-- ## TODO
 // faire header au bytecode
@@ -1369,11 +1411,55 @@ getgid (Syscall Number: 104): Get the group ID.
 socket (Syscall Number: -1): Create an endpoint for communication (varies between operating systems).
 -->
 
-<div class="highlight"><pre><span></span><code><span class="n">Les</span><span class="w"> </span><span class="n">syscalls</span>
+<h2 id="les-syscalls">Les syscalls</h2>
+<div class="highlight"><pre><span></span><code><span class="n">print</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">string</span><span class="w"> </span><span class="n">value</span><span class="p">)</span>
+<span class="c1">// Syscall Number: 1 : Ecrire dans le stdout</span>
 
-<span class="n">exit</span><span class="w"> </span><span class="p">(</span><span class="n">Syscall</span><span class="w"> </span><span class="n">Number</span><span class="o">:</span><span class="w"> </span><span class="mi">60</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">Termine</span><span class="w"> </span><span class="n">le</span><span class="w"> </span><span class="n">processus</span><span class="w"> </span><span class="n">et</span><span class="w"> </span><span class="n">retourne</span><span class="w"> </span><span class="n">le</span><span class="w"> </span><span class="n">status</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">sortie</span><span class="w"> </span><span class="n">au</span><span class="w"> </span><span class="n">parent</span><span class="p">.</span>
+<span class="n">getline</span><span class="w"> </span><span class="p">()</span>
+<span class="c1">// Syscall Number: 2 : Lire une ligne depuis le stdin</span>
 
-<span class="n">write</span><span class="w"> </span><span class="p">(</span><span class="n">Syscall</span><span class="w"> </span><span class="n">Number</span><span class="o">:</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">Ecrire</span><span class="w"> </span><span class="n">dans</span><span class="w"> </span><span class="n">le</span><span class="w"> </span><span class="n">stdout</span>
+<span class="n">readFile</span><span class="w"> </span><span class="p">(</span><span class="n">string</span><span class="w"> </span><span class="n">path</span><span class="p">)</span>
+<span class="c1">// Syscall Number: 3 : Lire un fichier</span>
+
+<span class="n">writeInFile</span><span class="w"> </span><span class="p">(</span><span class="n">string</span><span class="w"> </span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">string</span><span class="w"> </span><span class="n">content</span><span class="p">)</span>
+<span class="c1">// Syscall Number: 4 : Ecrire dans un fichier</span>
+
+<span class="n">appendInFile</span><span class="w"> </span><span class="p">(</span><span class="n">string</span><span class="w"> </span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">string</span><span class="w"> </span><span class="n">content</span><span class="p">)</span>
+<span class="c1">// Syscall Number: 5 : Ecrire à la fin d`un fichier</span>
+
+<span class="n">exit</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">status</span><span class="p">)</span>
+<span class="c1">// Syscall Number: 60 : Termine le processus et retourne le status de sortie au parent.</span>
+</code></pre></div>
+<h3 id="exemple-of-syscall-usage">Exemple of syscall usage</h3>
+<div class="highlight"><pre><span></span><code><span class="n">fun</span><span class="w"> </span><span class="nf">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kt">int</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\t</span><span class="s">User 1:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Enter a name:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getline</span><span class="p">();</span>
+
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Enter an age:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getline</span><span class="p">();</span>
+
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Enter a car:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">car</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getline</span><span class="p">();</span>
+
+<span class="w">    </span><span class="n">writeInFile</span><span class="p">(</span><span class="s">&quot;file.json&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;[</span><span class="se">\n\t</span><span class="s">{</span><span class="se">\n\t\t\&quot;</span><span class="s">name</span><span class="se">\&quot;</span><span class="s">: </span><span class="se">\&quot;</span><span class="s">&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">,</span><span class="se">\n\t\t\&quot;</span><span class="s">age</span><span class="se">\&quot;</span><span class="s">: </span><span class="se">\&quot;</span><span class="s">&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">,</span><span class="se">\n\t\t\&quot;</span><span class="s">car</span><span class="se">\&quot;</span><span class="s">: </span><span class="se">\&quot;</span><span class="s">&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">car</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\&quot;\n\t</span><span class="s">}&quot;</span><span class="p">);</span>
+
+
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\t</span><span class="s">User 2:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Enter a name:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getline</span><span class="p">();</span>
+
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Enter an age:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getline</span><span class="p">();</span>
+
+<span class="w">    </span><span class="n">print</span><span class="p">(</span><span class="s">&quot;Enter a car:</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="n">string</span><span class="w"> </span><span class="n">car</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getline</span><span class="p">();</span>
+
+<span class="w">    </span><span class="n">appendInFile</span><span class="p">(</span><span class="s">&quot;file.json&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;,</span><span class="se">\n\t</span><span class="s">{</span><span class="se">\n\t\t\&quot;</span><span class="s">name</span><span class="se">\&quot;</span><span class="s">: </span><span class="se">\&quot;</span><span class="s">&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">,</span><span class="se">\n\t\t\&quot;</span><span class="s">age</span><span class="se">\&quot;</span><span class="s">: </span><span class="se">\&quot;</span><span class="s">&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">,</span><span class="se">\n\t\t\&quot;</span><span class="s">car</span><span class="se">\&quot;</span><span class="s">: </span><span class="se">\&quot;</span><span class="s">&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">car</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\&quot;\n\t</span><span class="s">}</span><span class="se">\n</span><span class="s">]</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
 
 
